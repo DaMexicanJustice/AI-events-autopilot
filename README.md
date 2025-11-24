@@ -2,17 +2,17 @@
 
 This version does exactly this flow every single time:
 
-1. You type anywhere:  
-   `@AI Event Bot MC Retro Run – Friday 20:00 CET – 40-man – 8 tanks / 12 healers / 20 DPS @Sylvanas @Thrall @Jaina`
+1. You type anywhere:
+    `@Stilzkin create MC Retro Run – Friday 20:00 CET – 40-man – 8 tanks / 12 healers / 20 DPS @Sylvanas @Thrall @Jaina`
 
 2. The bot instantly:
-   - Goes to your **#events** channel  
-   - Creates a new thread named **“MC Retro Run – Friday 20:00 CET”**  
-   - Tags **@Event Master** and runs **/event create** inside that thread  
-   - Answers every single question perfectly in your DMs  
-   - When the signup is posted, the bot @-mentions everyone you listed (Sylvanas, Thrall, Jaina, …) in the thread  
+    - Goes to your **#events** channel
+    - Creates a new thread named **"MC Retro Run – Friday 20:00 CET"**
+    - Posts an embed with the event details, date/time, size, roles, and buttons for Accept, Maybe, Decline
+    - @-mentions everyone you listed (Sylvanas, Thrall, Jaina, …) in the thread
+    - Users can click the buttons to sign up, and the embed updates with the current signups
 
-You literally never touch Event Master again.
+The bot handles all signups directly without external dependencies.
 
 ### Files (copy-paste everything)
 
