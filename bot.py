@@ -29,8 +29,8 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    # Check if message mentions the bot and starts with "@AI Event Bot"
-    if bot.user in message.mentions and message.content.startswith(f'<@{bot.user.id}> AI Event Bot'):
+    # Check if message mentions the bot and starts with "@Stilzkin"
+    if bot.user in message.mentions and message.content.startswith(f'<@{bot.user.id}> Stilzkin'):
         await handle_event_creation(message)
 
     # Handle DMs from Event Master
@@ -46,11 +46,11 @@ async def on_message(message):
                 await message.channel.send(mentions_str)
 
 async def handle_event_creation(message):
-    content = message.content.replace(f'<@{bot.user.id}> AI Event Bot', '').strip()
+    content = message.content.replace(f'<@{bot.user.id}> Stilzkin', '').strip()
     # Parse content: "MC Retro Run – Friday 20:00 CET – 40-man – 8 tanks / 12 healers / 20 DPS @Sylvanas @Thrall @Jaina"
     parts = content.split(' – ')
     if len(parts) < 4:
-        await message.reply("Invalid format. Please use: @AI Event Bot <event name> – <time> – <size> – <roles> <mentions>")
+        await message.reply("Invalid format. Please use: @Stilzkin <event name> – <time> – <size> – <roles> <mentions>")
         return
 
     event_name = parts[0].strip()
