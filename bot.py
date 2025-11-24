@@ -85,7 +85,7 @@ async def handle_event_creation(message):
 async def handle_dm_response(message):
     # Use AI to respond
     response = await get_ai_response(message.content)
-    await message.author.send(response)
+    await message.channel.send(response)
 
 async def get_ai_response(question):
     # Use Anthropic to answer
