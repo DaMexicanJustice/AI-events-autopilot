@@ -29,4 +29,4 @@ ANTHROPIC_KEY=sk-ant-...          # ← Recommended – works 99.9 % perfectly
 EVENTS_CHANNEL_ID=123456789012345678
 
 # Event Master user ID – do NOT change
-PLANNER_BOT_ID=787111761998888990
+PLANNER_BOT_ID=787111761998888990# AI-events-autopilot
